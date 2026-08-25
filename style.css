@@ -1106,3 +1106,10 @@ footer {
   .explore-grid { grid-template-columns: 1fr; }
   .logo-badge img { height: 24px; }
 }
+
+/* Sombra branca de destaque para logos da Amazon e Total Express */
+img[src*="amazon.png"],
+img[src*="totalexpress.png"],
+img[src*="total-express.png"] {
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 1px #ffffff) !important;
+}
