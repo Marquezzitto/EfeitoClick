@@ -1111,5 +1111,5 @@ footer {
 img[src*="amazon.png"],
 img[src*="totalexpress.png"],
 img[src*="total-express.png"] {
-  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.45)) drop-shadow(0 0 1.5px #ffffff) !important;
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.45)) drop-shadow(0 0 0.8px #ffffff) !important;
 }
