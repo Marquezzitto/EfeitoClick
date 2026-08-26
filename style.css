@@ -440,9 +440,10 @@ header {
 
 .card-top {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 1.1rem;
+  height: 52px;
 }
 
 .card-icon {
@@ -1034,7 +1035,9 @@ footer {
 
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
-/* Logo Badge de Transportadoras */
+/* ==========================================================================
+   Logo Badge de Transportadoras (Correção de Proporção SVG)
+   ========================================================================== */
 .logo-badge {
   display: flex;
   align-items: center;
@@ -1045,34 +1048,56 @@ footer {
 }
 
 .logo-badge img {
-  width: auto;
-  max-width: 160px;
-  height: auto;
-  max-height: 36px;
-  object-fit: contain;
   display: block;
+  object-fit: contain;
 }
 
-/* Logos horizontais (ajuste de proporção direta) */
-.logo-badge img[src*="jadlog.svg"],
-.logo-badge img[src*="loggi.svg"],
-.logo-badge img[src*="pegaki.svg"],
-.logo-badge img[src*="amazon.svg"],
-.logo-badge img[src*="totalexpress.svg"] {
-  width: 145px !important;
-  max-width: 160px !important;
-  height: auto !important;
-  max-height: 44px !important;
-}
-
-/* Logos volumosos (limitação de altura para não estourar) */
+/* 1. Logos compactos e volumosos */
 .logo-badge img[src*="jt-express.svg"],
 .logo-badge img[src*="correios.svg"],
 .logo-badge img[src*="shopee.svg"],
 .logo-badge img[src*="anjun-express.svg"],
 .logo-badge img[src*="fedex.svg"] {
-  max-height: 32px !important;
+  height: 32px !important;
   width: auto !important;
+  max-width: 150px !important;
+}
+
+/* 2. Logos finos com prancheta larga (ampliação individual sem distorcer) */
+.logo-badge img[src*="jadlog.svg"] {
+  height: 32px !important;
+  width: auto !important;
+  transform: scale(2.2);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="loggi.svg"] {
+  height: 30px !important;
+  width: auto !important;
+  transform: scale(2.0);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="pegaki.svg"] {
+  height: 28px !important;
+  width: auto !important;
+  transform: scale(2.2);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="amazon.svg"] {
+  height: 30px !important;
+  width: auto !important;
+  transform: scale(2.3);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="totalexpress.svg"],
+.logo-badge img[src*="total-express.svg"] {
+  height: 30px !important;
+  width: auto !important;
+  transform: scale(2.2);
+  transform-origin: left center;
 }
 
 .logo-badge .badge-fallback {
@@ -1091,15 +1116,19 @@ footer {
   letter-spacing: -0.01em;
 }
 
+/* ==========================================================================
+   Ajuste dos Logos no Accordion (Menu Sanfona Inferior)
+   ========================================================================== */
 .partner-item summary .summary-icon.logo-badge {
   width: 80px;
-  height: 34px;
+  height: 36px;
   padding: 0;
   margin-right: 0.5rem;
+  overflow: visible;
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 24px !important;
+  max-height: 22px !important;
   max-width: 75px !important;
   width: auto !important;
 }
@@ -1108,9 +1137,10 @@ footer {
 .partner-item summary .summary-icon.logo-badge img[src*="loggi.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="amazon.svg"],
-.partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"] {
-  width: 75px !important;
-  max-height: 28px !important;
+.partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"],
+.partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
+  transform: scale(1.8);
+  transform-origin: center center;
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
