@@ -1085,7 +1085,7 @@ footer {
 
 .logo-badge img[src*="totalexpress.svg"],
 .logo-badge img[src*="total-express.svg"] {
-  height: 25px !important;
+  height: 30px !important;
   width: auto !important;
   transform: scale(1.85);
   transform-origin: left center;
