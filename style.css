@@ -1080,12 +1080,12 @@ footer {
   width: auto !important;
   transform: scale(2.7);
   transform-origin: left center;
-  filter: brightness(1.5) contrast(1.2);
+  filter: brightness(1.6) contrast(1.2);
 }
 
 .logo-badge img[src*="totalexpress.svg"],
 .logo-badge img[src*="total-express.svg"] {
-  height: 22px !important;
+  height: 25px !important;
   width: auto !important;
   transform: scale(1.85);
   transform-origin: left center;
@@ -1100,15 +1100,15 @@ footer {
 }
 
 .logo-badge img[src*="correios.svg"] {
-  height: 17px !important;
-  max-height: 17px !important;
+  height: 15px !important;
+  max-height: 15px !important;
   width: auto !important;
   transform: none;
 }
 
 .logo-badge img[src*="jt-express.svg"] {
-  height: 20px !important;
-  max-height: 20px !important;
+  height: 18px !important;
+  max-height: 18px !important;
   width: auto !important;
   transform: none;
 }
