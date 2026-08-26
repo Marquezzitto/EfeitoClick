@@ -131,7 +131,7 @@ section + section { border-top: 1px solid var(--border); }
 
 /* ==========================================================================
    Header & Navbar
-   ========================================================================= */
+   ========================================================================== */
 header {
   position: sticky;
   top: 0;
@@ -1052,7 +1052,7 @@ footer {
   object-fit: contain;
 }
 
-/* 1. AMAZON (Referência central) */
+/* 1. AMAZON (Referência central de tamanho) */
 .logo-badge img[src*="amazon.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1060,7 +1060,7 @@ footer {
   transform-origin: left center;
 }
 
-/* 2. LOGOS FINOS (Ampliados para ter a mesma largura e impacto da Amazon) */
+/* 2. LOGOS FINOS (Ampliados para ter o mesmo tamanho da Amazon) */
 .logo-badge img[src*="jadlog.svg"] {
   height: 32px !important;
   width: auto !important;
@@ -1075,11 +1075,13 @@ footer {
   transform-origin: left center;
 }
 
+/* Pegaki com brilho calibrado para não sumir no fundo escuro */
 .logo-badge img[src*="pegaki.svg"] {
   height: 30px !important;
   width: auto !important;
-  transform: scale(3.3);
+  transform: scale(3.5);
   transform-origin: left center;
+  filter: brightness(1.7) contrast(1.2) !important;
 }
 
 .logo-badge img[src*="totalexpress.svg"],
@@ -1090,38 +1092,38 @@ footer {
   transform-origin: left center;
 }
 
-/* 3. LOGOS VOLUMOSOS (Ajustados exatamente para o mesmo comprimento e espessura da Amazon) */
+/* 3. LOGOS VOLUMOSOS (Reduzidos para não ficarem gigantes) */
 .logo-badge img[src*="shopee.svg"] {
-  height: 28px !important;
-  max-height: 28px !important;
-  width: auto !important;
-  transform: scale(1.0);
-}
-
-.logo-badge img[src*="jt-express.svg"] {
-  height: 24px !important;
-  max-height: 24px !important;
-  width: auto !important;
-  transform: scale(1.0);
-}
-
-.logo-badge img[src*="correios.svg"] {
-  height: 24px !important;
-  max-height: 24px !important;
-  width: auto !important;
-  transform: scale(1.0);
-}
-
-.logo-badge img[src*="anjun-express.svg"] {
   height: 26px !important;
   max-height: 26px !important;
   width: auto !important;
   transform: scale(1.0);
 }
 
+.logo-badge img[src*="jt-express.svg"] {
+  height: 16px !important;
+  max-height: 16px !important;
+  width: auto !important;
+  transform: scale(1.0);
+}
+
+.logo-badge img[src*="correios.svg"] {
+  height: 16px !important;
+  max-height: 16px !important;
+  width: auto !important;
+  transform: scale(1.0);
+}
+
+.logo-badge img[src*="anjun-express.svg"] {
+  height: 22px !important;
+  max-height: 22px !important;
+  width: auto !important;
+  transform: scale(1.0);
+}
+
 .logo-badge img[src*="fedex.svg"] {
-  height: 24px !important;
-  max-height: 24px !important;
+  height: 20px !important;
+  max-height: 20px !important;
   width: auto !important;
   transform: scale(1.0);
 }
@@ -1154,8 +1156,8 @@ footer {
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 20px !important;
-  max-width: 65px !important;
+  max-height: 16px !important;
+  max-width: 60px !important;
   width: auto !important;
 }
 
@@ -1167,6 +1169,10 @@ footer {
 .partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
   transform: scale(2.0);
   transform-origin: center center;
+}
+
+.partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"] {
+  filter: brightness(1.7) contrast(1.2) !important;
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
