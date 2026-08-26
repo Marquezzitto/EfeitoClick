@@ -1036,7 +1036,7 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Calibragem Visual Uniforme)
+   Logo Badge de Transportadoras (Calibragem Visual Individual)
    ========================================================================== */
 .logo-badge {
   display: flex;
@@ -1052,7 +1052,7 @@ footer {
   object-fit: contain;
 }
 
-/* Amazon como padrão de referência */
+/* Padrão de referência: Amazon */
 .logo-badge img[src*="amazon.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1090,34 +1090,35 @@ footer {
   transform-origin: left center;
 }
 
-/* Logos compactos e volumosos ajustados proporcionalmente */
+/* Shopee calibrada para manter presença visual equilibrada com a Amazon */
+.logo-badge img[src*="shopee.svg"] {
+  height: 25px !important;
+  max-height: 25px !important;
+  width: auto !important;
+}
+
+/* Demais marcas com proporção equilibrada */
 .logo-badge img[src*="jt-express.svg"] {
-  height: 14px !important;
-  max-height: 14px !important;
+  height: 20px !important;
+  max-height: 20px !important;
   width: auto !important;
 }
 
 .logo-badge img[src*="correios.svg"] {
-  height: 14px !important;
-  max-height: 14px !important;
-  width: auto !important;
-}
-
-.logo-badge img[src*="shopee.svg"] {
-  height: 15px !important;
-  max-height: 15px !important;
+  height: 20px !important;
+  max-height: 20px !important;
   width: auto !important;
 }
 
 .logo-badge img[src*="anjun-express.svg"] {
-  height: 14px !important;
-  max-height: 14px !important;
+  height: 19px !important;
+  max-height: 19px !important;
   width: auto !important;
 }
 
 .logo-badge img[src*="fedex.svg"] {
-  height: 14px !important;
-  max-height: 14px !important;
+  height: 19px !important;
+  max-height: 19px !important;
   width: auto !important;
 }
 
@@ -1149,7 +1150,7 @@ footer {
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 14px !important;
+  max-height: 16px !important;
   max-width: 60px !important;
   width: auto !important;
 }
