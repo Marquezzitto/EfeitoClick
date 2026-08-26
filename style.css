@@ -1052,18 +1052,19 @@ footer {
   object-fit: contain;
 }
 
-/* 1. Logos compactos e volumosos */
+/* 1. Logos compactos e volumosos (reduzidos para equilibrar visualmente) */
 .logo-badge img[src*="jt-express.svg"],
 .logo-badge img[src*="correios.svg"],
 .logo-badge img[src*="shopee.svg"],
 .logo-badge img[src*="anjun-express.svg"],
 .logo-badge img[src*="fedex.svg"] {
-  height: 32px !important;
+  height: 22px !important;
+  max-height: 22px !important;
   width: auto !important;
-  max-width: 150px !important;
+  max-width: 110px !important;
 }
 
-/* 2. Logos finos com prancheta larga (ampliação individual sem distorcer) */
+/* 2. Logos finos e compridos (ampliados para igualar o peso visual) */
 .logo-badge img[src*="jadlog.svg"] {
   height: 32px !important;
   width: auto !important;
@@ -1128,8 +1129,8 @@ footer {
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 22px !important;
-  max-width: 75px !important;
+  max-height: 18px !important;
+  max-width: 65px !important;
   width: auto !important;
 }
 
