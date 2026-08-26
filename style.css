@@ -1039,29 +1039,40 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 150px;
+  width: 170px;
   height: 48px;
+  overflow: visible;
 }
 
 .logo-badge img {
-  height: auto !important;
-  max-height: 44px !important;
-  width: auto !important;
-  max-width: 140px !important;
-  object-fit: contain !important;
+  width: auto;
+  max-width: 160px;
+  height: auto;
+  max-height: 36px;
+  object-fit: contain;
   display: block;
 }
 
-/* Escala individual para logos pequenos */
-img[src*="jadlog.svg"],
-img[src*="loggi.svg"],
-img[src*="pegaki.svg"],
-img[src*="amazon.svg"],
-img[src*="totalexpress.svg"] {
-  height: 38px !important;
-  max-width: 150px !important;
-  transform: scale(1.4);
-  transform-origin: left center;
+/* Logos horizontais (ajuste de proporção direta) */
+.logo-badge img[src*="jadlog.svg"],
+.logo-badge img[src*="loggi.svg"],
+.logo-badge img[src*="pegaki.svg"],
+.logo-badge img[src*="amazon.svg"],
+.logo-badge img[src*="totalexpress.svg"] {
+  width: 145px !important;
+  max-width: 160px !important;
+  height: auto !important;
+  max-height: 44px !important;
+}
+
+/* Logos volumosos (limitação de altura para não estourar) */
+.logo-badge img[src*="jt-express.svg"],
+.logo-badge img[src*="correios.svg"],
+.logo-badge img[src*="shopee.svg"],
+.logo-badge img[src*="anjun-express.svg"],
+.logo-badge img[src*="fedex.svg"] {
+  max-height: 32px !important;
+  width: auto !important;
 }
 
 .logo-badge .badge-fallback {
@@ -1082,14 +1093,15 @@ img[src*="totalexpress.svg"] {
 
 .partner-item summary .summary-icon.logo-badge {
   width: 80px;
-  height: 36px;
+  height: 34px;
   padding: 0;
   margin-right: 0.5rem;
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 28px !important;
+  max-height: 24px !important;
   max-width: 75px !important;
+  width: auto !important;
 }
 
 .partner-item summary .summary-icon.logo-badge img[src*="jadlog.svg"],
@@ -1097,8 +1109,8 @@ img[src*="totalexpress.svg"] {
 .partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="amazon.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"] {
-  transform: scale(1.35);
-  transform-origin: center center;
+  width: 75px !important;
+  max-height: 28px !important;
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
