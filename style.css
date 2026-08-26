@@ -131,7 +131,7 @@ section + section { border-top: 1px solid var(--border); }
 
 /* ==========================================================================
    Header & Navbar
-   ========================================================================== */
+   ========================================================================= */
 header {
   position: sticky;
   top: 0;
@@ -1036,7 +1036,7 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Padronização Proporcional com a Amazon)
+   Logo Badge de Transportadoras (Padronização Fina baseada na Amazon)
    ========================================================================== */
 .logo-badge {
   display: flex;
@@ -1052,7 +1052,7 @@ footer {
   object-fit: contain;
 }
 
-/* 1. AMAZON (Referência Central) */
+/* 1. AMAZON (Referência central) */
 .logo-badge img[src*="amazon.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1060,71 +1060,70 @@ footer {
   transform-origin: left center;
 }
 
-/* 2. LOGOS FINOS / HORIZONTAIS */
+/* 2. LOGOS FINOS (Ampliados para ter a mesma largura e impacto da Amazon) */
 .logo-badge img[src*="jadlog.svg"] {
-  height: 30px !important;
+  height: 32px !important;
   width: auto !important;
-  transform: scale(2.6);
+  transform: scale(3.2);
   transform-origin: left center;
 }
 
 .logo-badge img[src*="loggi.svg"] {
-  height: 28px !important;
+  height: 30px !important;
   width: auto !important;
-  transform: scale(2.4);
+  transform: scale(2.8);
   transform-origin: left center;
 }
 
 .logo-badge img[src*="pegaki.svg"] {
-  height: 26px !important;
+  height: 30px !important;
   width: auto !important;
-  transform: scale(2.7);
+  transform: scale(3.3);
   transform-origin: left center;
-  filter: brightness(1.5) contrast(1.2);
 }
 
 .logo-badge img[src*="totalexpress.svg"],
 .logo-badge img[src*="total-express.svg"] {
-  height: 22px !important;
+  height: 30px !important;
   width: auto !important;
-  transform: scale(1.85);
+  transform: scale(2.8);
   transform-origin: left center;
 }
 
-/* 3. LOGOS VOLUMOSOS E COMPACTOS */
+/* 3. LOGOS VOLUMOSOS (Ajustados exatamente para o mesmo comprimento e espessura da Amazon) */
 .logo-badge img[src*="shopee.svg"] {
-  height: 25px !important;
-  max-height: 25px !important;
+  height: 28px !important;
+  max-height: 28px !important;
   width: auto !important;
-  transform: none;
-}
-
-.logo-badge img[src*="correios.svg"] {
-  height: 17px !important;
-  max-height: 17px !important;
-  width: auto !important;
-  transform: none;
+  transform: scale(1.0);
 }
 
 .logo-badge img[src*="jt-express.svg"] {
-  height: 20px !important;
-  max-height: 20px !important;
+  height: 24px !important;
+  max-height: 24px !important;
   width: auto !important;
-  transform: none;
+  transform: scale(1.0);
+}
+
+.logo-badge img[src*="correios.svg"] {
+  height: 24px !important;
+  max-height: 24px !important;
+  width: auto !important;
+  transform: scale(1.0);
 }
 
 .logo-badge img[src*="anjun-express.svg"] {
-  height: 19px !important;
-  max-height: 19px !important;
+  height: 26px !important;
+  max-height: 26px !important;
   width: auto !important;
-  transform: none;
+  transform: scale(1.0);
 }
 
 .logo-badge img[src*="fedex.svg"] {
-  height: 19px !important;
-  max-height: 19px !important;
+  height: 24px !important;
+  max-height: 24px !important;
   width: auto !important;
-  transform: none;
+  transform: scale(1.0);
 }
 
 .logo-badge .badge-fallback {
@@ -1155,27 +1154,19 @@ footer {
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 16px !important;
-  max-width: 60px !important;
+  max-height: 20px !important;
+  max-width: 65px !important;
   width: auto !important;
 }
 
 .partner-item summary .summary-icon.logo-badge img[src*="jadlog.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="loggi.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"],
-.partner-item summary .summary-icon.logo-badge img[src*="amazon.svg"] {
-  transform: scale(1.9);
-  transform-origin: center center;
-}
-
+.partner-item summary .summary-icon.logo-badge img[src*="amazon.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
-  transform: scale(1.4);
+  transform: scale(2.0);
   transform-origin: center center;
-}
-
-.partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"] {
-  filter: brightness(1.5) contrast(1.2);
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
