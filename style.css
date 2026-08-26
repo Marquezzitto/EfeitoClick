@@ -1076,7 +1076,7 @@ footer {
 }
 
 .logo-badge img[src*="pegaki.svg"] {
-  height: 26px !important;
+  height: 30px !important;
   width: auto !important;
   transform: scale(2.7);
   transform-origin: left center;
@@ -1085,7 +1085,7 @@ footer {
 
 .logo-badge img[src*="totalexpress.svg"],
 .logo-badge img[src*="total-express.svg"] {
-  height: 30px !important;
+  height: 35px !important;
   width: auto !important;
   transform: scale(1.85);
   transform-origin: left center;
@@ -1194,7 +1194,7 @@ footer {
 
 .partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
-  transform: scale(1.75);
+  transform: scale(1.95);
   transform-origin: center center;
 }
 
