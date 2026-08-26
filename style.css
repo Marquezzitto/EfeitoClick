@@ -1036,7 +1036,7 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Correção de Proporção SVG)
+   Logo Badge de Transportadoras (Calibragem Visual Uniforme)
    ========================================================================== */
 .logo-badge {
   display: flex;
@@ -1052,40 +1052,7 @@ footer {
   object-fit: contain;
 }
 
-/* 1. Logos compactos e volumosos (reduzidos para equilibrar visualmente) */
-.logo-badge img[src*="jt-express.svg"],
-.logo-badge img[src*="correios.svg"],
-.logo-badge img[src*="shopee.svg"],
-.logo-badge img[src*="anjun-express.svg"],
-.logo-badge img[src*="fedex.svg"] {
-  height: 16px !important;
-  max-height: 16px !important;
-  width: auto !important;
-  max-width: 100px !important;
-}
-
-/* 2. Logos finos e compridos (ampliados para igualar o peso visual) */
-.logo-badge img[src*="jadlog.svg"] {
-  height: 32px !important;
-  width: auto !important;
-  transform: scale(2.2);
-  transform-origin: left center;
-}
-
-.logo-badge img[src*="loggi.svg"] {
-  height: 30px !important;
-  width: auto !important;
-  transform: scale(2.0);
-  transform-origin: left center;
-}
-
-.logo-badge img[src*="pegaki.svg"] {
-  height: 28px !important;
-  width: auto !important;
-  transform: scale(2.2);
-  transform-origin: left center;
-}
-
+/* Amazon como padrão de referência */
 .logo-badge img[src*="amazon.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1093,12 +1060,65 @@ footer {
   transform-origin: left center;
 }
 
-.logo-badge img[src*="totalexpress.svg"],
-.logo-badge img[src*="total-express.svg"] {
+/* Logos finos e compridos ampliados para igualar a Amazon */
+.logo-badge img[src*="jadlog.svg"] {
   height: 30px !important;
   width: auto !important;
-  transform: scale(2.2);
+  transform: scale(2.6);
   transform-origin: left center;
+}
+
+.logo-badge img[src*="loggi.svg"] {
+  height: 28px !important;
+  width: auto !important;
+  transform: scale(2.4);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="pegaki.svg"] {
+  height: 26px !important;
+  width: auto !important;
+  transform: scale(2.7);
+  transform-origin: left center;
+}
+
+.logo-badge img[src*="totalexpress.svg"],
+.logo-badge img[src*="total-express.svg"] {
+  height: 28px !important;
+  width: auto !important;
+  transform: scale(2.4);
+  transform-origin: left center;
+}
+
+/* Logos compactos e volumosos ajustados proporcionalmente */
+.logo-badge img[src*="jt-express.svg"] {
+  height: 14px !important;
+  max-height: 14px !important;
+  width: auto !important;
+}
+
+.logo-badge img[src*="correios.svg"] {
+  height: 14px !important;
+  max-height: 14px !important;
+  width: auto !important;
+}
+
+.logo-badge img[src*="shopee.svg"] {
+  height: 15px !important;
+  max-height: 15px !important;
+  width: auto !important;
+}
+
+.logo-badge img[src*="anjun-express.svg"] {
+  height: 14px !important;
+  max-height: 14px !important;
+  width: auto !important;
+}
+
+.logo-badge img[src*="fedex.svg"] {
+  height: 14px !important;
+  max-height: 14px !important;
+  width: auto !important;
 }
 
 .logo-badge .badge-fallback {
@@ -1129,8 +1149,8 @@ footer {
 }
 
 .partner-item summary .summary-icon.logo-badge img {
-  max-height: 18px !important;
-  max-width: 65px !important;
+  max-height: 14px !important;
+  max-width: 60px !important;
   width: auto !important;
 }
 
@@ -1140,7 +1160,7 @@ footer {
 .partner-item summary .summary-icon.logo-badge img[src*="amazon.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
-  transform: scale(1.8);
+  transform: scale(1.9);
   transform-origin: center center;
 }
 
