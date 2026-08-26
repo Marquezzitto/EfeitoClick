@@ -1038,13 +1038,14 @@ footer {
 .logo-badge {
   display: flex;
   align-items: center;
-  min-height: 32px;
+  min-height: 48px;
+  height: 48px;
 }
 
 .logo-badge img {
-  height: 30px;
+  height: 38px;
   width: auto;
-  max-width: 132px;
+  max-width: 160px;
   object-fit: contain;
   display: block;
 }
@@ -1067,13 +1068,16 @@ footer {
 
 .partner-item summary .summary-icon.logo-badge {
   width: auto;
-  min-width: 40px;
-  height: 40px;
+  min-width: 48px;
+  height: 36px;
   padding: 0 0.3rem;
   margin-right: 0.2rem;
 }
 
-.partner-item summary .summary-icon.logo-badge img { height: 26px; }
+.partner-item summary .summary-icon.logo-badge img {
+  height: 26px;
+  max-width: 110px;
+}
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
   width: 40px;
@@ -1126,20 +1130,14 @@ footer {
 
 @media (max-width: 600px) {
   .explore-grid { grid-template-columns: 1fr; }
-  .logo-badge img { height: 24px; }
+  .logo-badge img { height: 28px; }
 }
 
-/* Contorno branco fino e concentrado para os logos */
-img[src*="amazon.png"],
-img[src*="totalexpress.png"],
-img[src*="total-express.png"],
-img[src*="loggi.png"],
-img[src*="correios.png"],
-img[src*="jt-express.png"],
-img[src*="fedex.png"] {
-  filter: 
-    drop-shadow( 1px  0px 0px rgba(255, 255, 255, 0.9))
-    drop-shadow(-1px  0px 0px rgba(255, 255, 255, 0.9))
-    drop-shadow( 0px  1px 0px rgba(255, 255, 255, 0.9))
-    drop-shadow( 0px -1px 0px rgba(255, 255, 255, 0.9)) !important;
+/* Inversão profissional para logos com texto preto em SVG */
+img[src*="amazon.svg"],
+img[src*="totalexpress.svg"],
+img[src*="pegaki.svg"],
+img[src*="jadlog.svg"],
+img[src*="loggi.svg"] {
+  filter: brightness(0) invert(1) !important;
 }
