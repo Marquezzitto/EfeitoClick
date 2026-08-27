@@ -1022,94 +1022,119 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Padrão Unificado em Contêineres)
+   Logo Badge de Transportadoras (Cards Superiores - Pílula Glass + Cores 100% Originais)
    ========================================================================== */
 .card-top .logo-badge,
-.card-top .card-icon {
-  width: 140px !important;
-  height: 44px !important;
+.card-top .card-icon,
+.logo-badge {
+  width: 155px !important;
+  height: 46px !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  overflow: visible !important;
+  justify-content: center !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(148, 199, 232, 0.18) !important;
+  border-radius: 10px !important;
+  padding: 0 0.85rem !important;
+  overflow: hidden !important;
 }
 
-.card-top img {
+.card-top img,
+.logo-badge img {
+  display: block !important;
+  object-fit: contain !important;
+  filter: none !important;
+}
+
+/* 1. AMAZON (Padrão Central de Referência) */
+.card-top img[src*="amazon.svg"],
+.logo-badge img[src*="amazon.svg"] {
+  height: 26px !important;
+  max-height: 26px !important;
+  width: auto !important;
+  transform: scale(2.0);
+  transform-origin: center center;
+}
+
+/* 2. LOGOS FINOS / HORIZONTAIS (Escalados para preencher a pílula uniformemente) */
+.card-top img[src*="jadlog.svg"],
+.logo-badge img[src*="jadlog.svg"] {
+  height: 26px !important;
+  max-height: 26px !important;
+  width: auto !important;
+  transform: scale(2.2);
+  transform-origin: center center;
+}
+
+.card-top img[src*="loggi.svg"],
+.logo-badge img[src*="loggi.svg"] {
   height: 24px !important;
   max-height: 24px !important;
   width: auto !important;
-  max-width: 125px !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-
-/* 1. Logos com margem interna vazia corrigidos com precisão */
-.card-top img[src*="amazon.svg"] {
-  height: 30px !important;
-  max-height: 30px !important;
-  transform: scale(2.0);
-  transform-origin: left center;
-}
-
-.card-top img[src*="jadlog.svg"] {
-  height: 30px !important;
-  max-height: 30px !important;
-  transform: scale(2.2);
-  transform-origin: left center;
-}
-
-.card-top img[src*="loggi.svg"] {
-  height: 28px !important;
-  max-height: 28px !important;
   transform: scale(1.9);
-  transform-origin: left center;
+  transform-origin: center center;
 }
 
-.card-top img[src*="pegaki.svg"] {
-  height: 28px !important;
-  max-height: 28px !important;
+.card-top img[src*="pegaki.svg"],
+.logo-badge img[src*="pegaki.svg"] {
+  height: 24px !important;
+  max-height: 24px !important;
+  width: auto !important;
   transform: scale(2.2);
-  transform-origin: left center;
-  filter: brightness(0) invert(1);
+  transform-origin: center center;
 }
 
 .card-top img[src*="totalexpress.svg"],
-.card-top img[src*="total-express.svg"] {
-  height: 26px !important;
-  max-height: 26px !important;
+.card-top img[src*="total-express.svg"],
+.logo-badge img[src*="totalexpress.svg"],
+.logo-badge img[src*="total-express.svg"] {
+  height: 24px !important;
+  max-height: 24px !important;
+  width: auto !important;
   transform: scale(1.8);
-  transform-origin: left center;
-  filter: brightness(0) invert(1);
+  transform-origin: center center;
 }
 
-/* 2. Logos densos travados para não estourarem o alinhamento */
-.card-top img[src*="correios.svg"] {
+/* 3. LOGOS VOLUMOSOS E COMPACTOS (Proporcionais à moldura) */
+.card-top img[src*="correios.svg"],
+.logo-badge img[src*="correios.svg"] {
   height: 14px !important;
   max-height: 14px !important;
-  max-width: 95px !important;
+  width: auto !important;
+  max-width: 90px !important;
+  transform: none !important;
 }
 
-.card-top img[src*="shopee.svg"] {
+.card-top img[src*="shopee.svg"],
+.logo-badge img[src*="shopee.svg"] {
   height: 22px !important;
   max-height: 22px !important;
+  width: auto !important;
+  transform: none !important;
 }
 
-.card-top img[src*="jt-express.svg"] {
+.card-top img[src*="jt-express.svg"],
+.logo-badge img[src*="jt-express.svg"] {
   height: 18px !important;
   max-height: 18px !important;
+  width: auto !important;
+  transform: none !important;
 }
 
-.card-top img[src*="anjun-express.svg"] {
+.card-top img[src*="anjun-express.svg"],
+.logo-badge img[src*="anjun-express.svg"] {
   height: 18px !important;
   max-height: 18px !important;
+  width: auto !important;
+  transform: none !important;
 }
 
-.card-top img[src*="fedex.svg"] {
+.card-top img[src*="fedex.svg"],
+.logo-badge img[src*="fedex.svg"] {
   height: 18px !important;
   max-height: 18px !important;
+  width: auto !important;
+  transform: none !important;
 }
 
 .logo-badge .badge-fallback {
@@ -1142,7 +1167,7 @@ footer {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background: rgba(255, 255, 255, 0.04) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
   border: 1px solid var(--border) !important;
   border-radius: var(--radius-sm) !important;
 }
@@ -1154,6 +1179,7 @@ footer {
   max-height: 22px !important;
   object-fit: contain !important;
   display: block !important;
+  filter: none !important;
 }
 
 .partner-item summary .summary-icon img[src*="amazon.svg"] {
@@ -1174,14 +1200,12 @@ footer {
 .partner-item summary .summary-icon img[src*="pegaki.svg"] {
   transform: scale(2.2);
   transform-origin: center center;
-  filter: brightness(0) invert(1) !important;
 }
 
 .partner-item summary .summary-icon img[src*="totalexpress.svg"],
 .partner-item summary .summary-icon img[src*="total-express.svg"] {
   transform: scale(1.8);
   transform-origin: center center;
-  filter: brightness(0) invert(1) !important;
 }
 
 .partner-item summary .summary-icon img[src*="correios.svg"] {
