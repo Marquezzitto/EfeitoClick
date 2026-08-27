@@ -1036,7 +1036,7 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Cards Superiores - Referência: Amazon)
+   Logo Badge de Transportadoras (Cards Superiores - Calibragem Profissional)
    ========================================================================== */
 .logo-badge {
   display: flex;
@@ -1052,7 +1052,7 @@ footer {
   object-fit: contain;
 }
 
-/* Amazon (Referência Base) */
+/* 1. AMAZON (Referência Base) */
 .logo-badge img[src*="amazon.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1060,7 +1060,7 @@ footer {
   transform-origin: left center;
 }
 
-/* Logos finos e compridos */
+/* 2. LOGOS FINOS / HORIZONTAIS */
 .logo-badge img[src*="jadlog.svg"] {
   height: 30px !important;
   width: auto !important;
@@ -1075,33 +1075,38 @@ footer {
   transform-origin: left center;
 }
 
+/* Pegaki: Ganho de contraste e brilho para o texto escuro se destacar */
 .logo-badge img[src*="pegaki.svg"] {
-  height: 30px !important;
+  height: 28px !important;
   width: auto !important;
   transform: scale(2.7);
   transform-origin: left center;
-  filter: brightness(1.6) contrast(1.2);
+  filter: brightness(2.4) contrast(1.15) !important;
 }
 
+/* Total Express: Proporção corrigida para não estourar + iluminação das letras escuras */
 .logo-badge img[src*="totalexpress.svg"],
 .logo-badge img[src*="total-express.svg"] {
-  height: 35px !important;
+  height: 20px !important;
   width: auto !important;
-  transform: scale(1.85);
+  transform: scale(1.6);
   transform-origin: left center;
+  filter: brightness(2.2) contrast(1.1) !important;
 }
 
-/* Logos volumosos e compactos */
-.logo-badge img[src*="shopee.svg"] {
-  height: 25px !important;
-  max-height: 25px !important;
+/* 3. LOGOS VOLUMOSOS E COMPACTOS */
+/* Correios: Travado em 13px de altura e 95px de largura máxima para nivelar com a Amazon */
+.logo-badge img[src*="correios.svg"] {
+  height: 13px !important;
+  max-height: 13px !important;
   width: auto !important;
+  max-width: 95px !important;
   transform: none;
 }
 
-.logo-badge img[src*="correios.svg"] {
-  height: 15px !important;
-  max-height: 15px !important;
+.logo-badge img[src*="shopee.svg"] {
+  height: 25px !important;
+  max-height: 25px !important;
   width: auto !important;
   transform: none;
 }
@@ -1114,15 +1119,15 @@ footer {
 }
 
 .logo-badge img[src*="anjun-express.svg"] {
-  height: 19px !important;
-  max-height: 19px !important;
+  height: 18px !important;
+  max-height: 18px !important;
   width: auto !important;
   transform: none;
 }
 
 .logo-badge img[src*="fedex.svg"] {
-  height: 19px !important;
-  max-height: 19px !important;
+  height: 18px !important;
+  max-height: 18px !important;
   width: auto !important;
   transform: none;
 }
@@ -1144,7 +1149,7 @@ footer {
 }
 
 /* ==========================================================================
-   Ajuste dos Logos no Accordion (Menu Sanfona Inferior - Calibragem Exata)
+   Ajuste dos Logos no Accordion (Menu Sanfona Inferior)
    ========================================================================== */
 .partner-item summary .summary-icon.logo-badge {
   width: 90px;
@@ -1189,22 +1194,27 @@ footer {
 .partner-item summary .summary-icon.logo-badge img[src*="pegaki.svg"] {
   transform: scale(2.6);
   transform-origin: center center;
-  filter: brightness(1.6) contrast(1.2) !important;
+  filter: brightness(2.4) contrast(1.15) !important;
 }
 
 .partner-item summary .summary-icon.logo-badge img[src*="totalexpress.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="total-express.svg"] {
-  transform: scale(1.95);
+  transform: scale(1.6);
   transform-origin: center center;
+  filter: brightness(2.2) contrast(1.1) !important;
 }
 
 /* Logos que já preenchem a moldura no accordion */
+.partner-item summary .summary-icon.logo-badge img[src*="correios.svg"] {
+  transform: scale(0.72);
+  transform-origin: center center;
+}
+
 .partner-item summary .summary-icon.logo-badge img[src*="shopee.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="jt-express.svg"],
-.partner-item summary .summary-icon.logo-badge img[src*="correios.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="anjun-express.svg"],
 .partner-item summary .summary-icon.logo-badge img[src*="fedex.svg"] {
-  transform: scale(0.9);
+  transform: scale(0.88);
   transform-origin: center center;
 }
 
