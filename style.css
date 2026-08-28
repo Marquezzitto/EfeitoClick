@@ -443,7 +443,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.1rem;
-  height: 48px;
+  height: 44px;
 }
 
 .badge-new {
@@ -1022,34 +1022,96 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Pílula Sólida Clara Padronizada)
+   Logo Badge de Transportadoras (Cards Superiores - Direto no Fundo Escuro)
    ========================================================================== */
 .card-top .logo-badge,
 .card-top .card-icon,
 .logo-badge {
-  width: 130px !important;
-  height: 38px !important;
+  width: auto !important;
+  height: 40px !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
-  border-radius: 8px !important;
-  padding: 4px 10px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  overflow: hidden !important;
+  justify-content: flex-start !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  overflow: visible !important;
 }
 
 .card-top img,
 .logo-badge img {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 110px !important;
-  max-height: 24px !important;
-  object-fit: contain !important;
   display: block !important;
-  filter: none !important;
+  object-fit: contain !important;
+  width: auto !important;
   transform: none !important;
+}
+
+/* 1. Logos com texto escuro invertidos para branco puro (alto contraste) */
+.card-top img[src*="jadlog.svg"],
+.logo-badge img[src*="jadlog.svg"],
+.card-top img[src*="pegaki.svg"],
+.logo-badge img[src*="pegaki.svg"],
+.card-top img[src*="totalexpress.svg"],
+.logo-badge img[src*="totalexpress.svg"],
+.card-top img[src*="total-express.svg"],
+.logo-badge img[src*="total-express.svg"],
+.card-top img[src*="amazon.svg"],
+.logo-badge img[src*="amazon.svg"] {
+  filter: brightness(0) invert(1) !important;
+}
+
+/* 2. Alturas individuais calibradas para nivelar o peso visual com a Amazon */
+.card-top img[src*="amazon.svg"],
+.logo-badge img[src*="amazon.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="jadlog.svg"],
+.logo-badge img[src*="jadlog.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="loggi.svg"],
+.logo-badge img[src*="loggi.svg"] {
+  height: 22px !important;
+}
+
+.card-top img[src*="pegaki.svg"],
+.logo-badge img[src*="pegaki.svg"] {
+  height: 22px !important;
+}
+
+.card-top img[src*="totalexpress.svg"],
+.card-top img[src*="total-express.svg"],
+.logo-badge img[src*="totalexpress.svg"],
+.logo-badge img[src*="total-express.svg"] {
+  height: 22px !important;
+}
+
+.card-top img[src*="correios.svg"],
+.logo-badge img[src*="correios.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="shopee.svg"],
+.logo-badge img[src*="shopee.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="jt-express.svg"],
+.logo-badge img[src*="jt-express.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="anjun-express.svg"],
+.logo-badge img[src*="anjun-express.svg"] {
+  height: 24px !important;
+}
+
+.card-top img[src*="fedex.svg"],
+.logo-badge img[src*="fedex.svg"] {
+  height: 24px !important;
 }
 
 .logo-badge .badge-fallback {
@@ -1073,30 +1135,36 @@ footer {
    ========================================================================== */
 .partner-item summary .summary-icon.logo-badge,
 .partner-item summary .summary-icon {
-  width: 80px !important;
-  height: 32px !important;
-  min-width: 80px !important;
-  padding: 3px 8px !important;
+  width: 70px !important;
+  height: 36px !important;
+  min-width: 70px !important;
+  padding: 0 !important;
   margin-right: 0.8rem !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  border-radius: 6px !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .partner-item summary .summary-icon img {
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 68px !important;
+  width: auto !important;
+  max-width: 65px !important;
+  height: auto !important;
   max-height: 20px !important;
   object-fit: contain !important;
   display: block !important;
-  filter: none !important;
   transform: none !important;
+}
+
+.partner-item summary .summary-icon img[src*="jadlog.svg"],
+.partner-item summary .summary-icon img[src*="pegaki.svg"],
+.partner-item summary .summary-icon img[src*="totalexpress.svg"],
+.partner-item summary .summary-icon img[src*="total-express.svg"],
+.partner-item summary .summary-icon img[src*="amazon.svg"] {
+  filter: brightness(0) invert(1) !important;
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
@@ -1150,5 +1218,5 @@ footer {
 
 @media (max-width: 600px) {
   .explore-grid { grid-template-columns: 1fr; }
-  .logo-badge img { height: 28px; }
+  .logo-badge img { height: 24px; }
 }
