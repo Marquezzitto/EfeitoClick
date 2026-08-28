@@ -1022,120 +1022,33 @@ footer {
 .page-hero p { max-width: 620px; font-size: 1.02rem; color: var(--ink-muted); }
 
 /* ==========================================================================
-   Logo Badge de Transportadoras (Cards Superiores - Calibragem Perfeita)
+   Logo Badge de Transportadoras (Pílula Sólida Clara Padronizada)
    ========================================================================== */
 .card-top .logo-badge,
 .card-top .card-icon,
 .logo-badge {
-  width: 150px !important;
-  height: 44px !important;
+  width: 130px !important;
+  height: 38px !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  overflow: visible !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 8px !important;
+  padding: 4px 10px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  overflow: hidden !important;
 }
 
 .card-top img,
 .logo-badge img {
-  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 110px !important;
+  max-height: 24px !important;
   object-fit: contain !important;
-}
-
-/* 1. AMAZON (Referência de Altura e Presença) */
-.card-top img[src*="amazon.svg"],
-.logo-badge img[src*="amazon.svg"] {
-  height: 28px !important;
-  max-height: 28px !important;
-  width: auto !important;
-  transform: scale(2.2);
-  transform-origin: left center;
-}
-
-/* 2. LOGOS FINOS / HORIZONTAIS (Escala alinhada à Amazon + Contraste das letras escuras) */
-.card-top img[src*="jadlog.svg"],
-.logo-badge img[src*="jadlog.svg"] {
-  height: 28px !important;
-  max-height: 28px !important;
-  width: auto !important;
-  transform: scale(2.4);
-  transform-origin: left center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.55)) brightness(1.6);
-}
-
-.card-top img[src*="loggi.svg"],
-.logo-badge img[src*="loggi.svg"] {
-  height: 26px !important;
-  max-height: 26px !important;
-  width: auto !important;
-  transform: scale(2.2);
-  transform-origin: left center;
-}
-
-.card-top img[src*="pegaki.svg"],
-.logo-badge img[src*="pegaki.svg"] {
-  height: 26px !important;
-  max-height: 26px !important;
-  width: auto !important;
-  transform: scale(2.5);
-  transform-origin: left center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.65)) brightness(1.8);
-}
-
-.card-top img[src*="totalexpress.svg"],
-.card-top img[src*="total-express.svg"],
-.logo-badge img[src*="totalexpress.svg"],
-.logo-badge img[src*="total-express.svg"] {
-  height: 24px !important;
-  max-height: 24px !important;
-  width: auto !important;
-  transform: scale(1.75);
-  transform-origin: left center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.55)) brightness(1.7);
-}
-
-/* 3. LOGOS VOLUMOSOS E COMPACTOS (Calibrados individualmente para não esticarem) */
-.card-top img[src*="correios.svg"],
-.logo-badge img[src*="correios.svg"] {
-  height: 14px !important;
-  max-height: 14px !important;
-  width: auto !important;
-  max-width: 90px !important;
-  transform: scale(1.15) !important;
-  transform-origin: left center !important;
-}
-
-.card-top img[src*="shopee.svg"],
-.logo-badge img[src*="shopee.svg"] {
-  height: 24px !important;
-  max-height: 24px !important;
-  width: auto !important;
-  transform: none !important;
-}
-
-.card-top img[src*="jt-express.svg"],
-.logo-badge img[src*="jt-express.svg"] {
-  height: 20px !important;
-  max-height: 20px !important;
-  width: auto !important;
-  transform: none !important;
-}
-
-.card-top img[src*="anjun-express.svg"],
-.logo-badge img[src*="anjun-express.svg"] {
-  height: 20px !important;
-  max-height: 20px !important;
-  width: auto !important;
-  transform: none !important;
-}
-
-.card-top img[src*="fedex.svg"],
-.logo-badge img[src*="fedex.svg"] {
-  height: 20px !important;
-  max-height: 20px !important;
-  width: auto !important;
+  display: block !important;
+  filter: none !important;
   transform: none !important;
 }
 
@@ -1160,69 +1073,30 @@ footer {
    ========================================================================== */
 .partner-item summary .summary-icon.logo-badge,
 .partner-item summary .summary-icon {
-  width: 85px !important;
-  height: 38px !important;
-  min-width: 85px !important;
-  padding: 0 0.4rem !important;
+  width: 80px !important;
+  height: 32px !important;
+  min-width: 80px !important;
+  padding: 3px 8px !important;
   margin-right: 0.8rem !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: var(--radius-sm) !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
 }
 
 .partner-item summary .summary-icon img {
-  width: auto !important;
-  max-width: 72px !important;
-  height: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 68px !important;
   max-height: 20px !important;
   object-fit: contain !important;
   display: block !important;
-}
-
-.partner-item summary .summary-icon img[src*="amazon.svg"] {
-  transform: scale(1.8);
-  transform-origin: center center;
-}
-
-.partner-item summary .summary-icon img[src*="jadlog.svg"] {
-  transform: scale(2.0);
-  transform-origin: center center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.55)) brightness(1.6);
-}
-
-.partner-item summary .summary-icon img[src*="loggi.svg"] {
-  transform: scale(1.8);
-  transform-origin: center center;
-}
-
-.partner-item summary .summary-icon img[src*="pegaki.svg"] {
-  transform: scale(2.0);
-  transform-origin: center center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.65)) brightness(1.8);
-}
-
-.partner-item summary .summary-icon img[src*="totalexpress.svg"],
-.partner-item summary .summary-icon img[src*="total-express.svg"] {
-  transform: scale(1.6);
-  transform-origin: center center;
-  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.55)) brightness(1.7);
-}
-
-.partner-item summary .summary-icon img[src*="correios.svg"] {
-  transform: scale(0.85);
-  transform-origin: center center;
-}
-
-.partner-item summary .summary-icon img[src*="shopee.svg"],
-.partner-item summary .summary-icon img[src*="jt-express.svg"],
-.partner-item summary .summary-icon img[src*="anjun-express.svg"],
-.partner-item summary .summary-icon img[src*="fedex.svg"] {
-  transform: scale(0.9);
-  transform-origin: center center;
+  filter: none !important;
+  transform: none !important;
 }
 
 .partner-item summary .summary-icon.logo-badge .badge-fallback {
